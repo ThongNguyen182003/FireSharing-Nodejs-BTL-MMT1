@@ -1,0 +1,312 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.user-input{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.file-name {
+    /* Chỉnh sửa CSS cho thẻ div chứa tên file */
+    /* Ví dụ: */
+    font-weight: bold;
+    color: blue;
+}
+.client-online{
+    margin-left: 25px;
+    padding: 20px;
+    background-color: #ddd;
+}
+/* Thêm kiểu mặc định cho user item */
+.user-Item {
+    color: black;
+    cursor: pointer;
+}
+
+/* Thêm kiểu khi được chọn */
+.user-Item.selected {
+    color: green;
+}
+
+.file-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.delete-button {
+    /* Chỉnh sửa CSS cho nút xóa */
+    /* Ví dụ: */
+    padding: 2px 5px;
+    color: red;
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+body{
+    background: #f5f5f5;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
+.screen{
+    display: none;
+}
+
+.screen.active{
+    display: block;
+}
+
+.app{
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.inputDiv{
+    color: brown;
+    font-weight: 500;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+.join-screen .form{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+}
+
+.join-screen .form .form-input{
+    margin: 10px 0px;
+}
+
+.join-screen .form h2{
+    font-size: 40px;
+    line-height: 45px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.join-screen .form button {
+    background: #111;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.join-screen .form #join-id b{
+    color: #222;
+    display: block;
+    margin-top: 20px;
+}
+
+.join-screen .form #join-id span {
+    display: inline-block;
+    font-size: 25px;
+    font-family: monospace;
+    color: #222;
+    padding: 10px;
+    border: 1px solid #111;
+    margin-top:5px ;
+}
+
+.join-screen .form label{
+    color: #222;
+    font-size: 10px;
+}
+
+.join-screen .form input{
+    display: block;
+    margin: 10px 0px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #111;
+    color: #111;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.fs-screen{
+    padding: 20px;
+}
+
+.fs-screen .file-input {
+    width: 100%;
+    border: 2px dashed #555;
+}
+
+.fs-screen .file-input label {
+    display: block;
+    width: 100%;
+    padding: 40px 50px ;
+    text-align: center;
+    color: #111;
+    font-size: 18px;
+}
+
+.fs-screen .file-input input{
+    display: none;
+
+}
+
+.fs-screen .files-list{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fs-screen .files-list .title{
+    width: 100%;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.fs-screen .files-list .item{
+    align-items: center;
+    min-width: 200px;
+    max-width: 200px;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0  , 0, 0.05);
+}
+
+.fs-screen .files-list .item .progress{
+    padding: 70px;
+    text-align: center;;
+    font-size: 20px;
+    font-family: monospace; 
+    font-weight:800;
+    background-image: url(image/mouse.jpg);
+    background-size: 200px;  /* Set the background size to 200px width */
+    background-repeat: no-repeat;
+    color: rgb(115, 255, 115);
+    filter: brightness(0.8); 
+}
+#clientName{
+    padding: 5px;
+    border-radius: 20px;
+}
+body{
+    background-image: url(image/Cat.jpg);
+}
+.fs-screen .files-list .item .filename{
+    font-size: 16px;
+    padding: 5px;
+    border-top: 1px solid #555;
+    text-align: center;
+}
+
+.fs-screen .files-list .item button{
+    margin-left: 50px;
+}
+
+
+::selection{
+    color: #fff;
+    background: #664AFF;
+  }
+
+  .search{
+    margin-right: 40px;
+  }
+  
+  .wrapper{
+  }
+  
+  .wrapper .search-input{
+    background: #fff;
+    width: 370px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  
+  .search-input input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  .search-input.active .autocom-box{
+    position: relative;
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .search-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+  
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+  }
+
+.button-request{
+    float: right;
+    padding: 5px 10px;
+}

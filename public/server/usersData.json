@@ -1,0 +1,37 @@
+[
+  {
+    "username": "thong",
+    "password": "123",
+    "files": [
+      "File_Sharing_MMT_HK231.zip",
+      "HK1_2324_BTL1-Network Application P2P File Sharing (5).pdf",
+      "NhaXeB4_500xe.xlsx",
+      "[2023-12-02] Lich su xe ra vao-Cong chinh.xlsx",
+      "[2023-12-02] Lich su xe ra vao-Cong phu.xlsx"
+    ]
+  },
+  {
+    "username": "yen",
+    "password": "123",
+    "files": [
+      "Acti1.drawio.png"
+    ]
+  },
+  {
+    "username": "minh",
+    "password": "123",
+    "files": []
+  },
+  {
+    "username": "",
+    "password": "",
+    "files": []
+  },
+  {
+    "username": "yen0",
+    "password": "1",
+    "files": [
+      "mmt2.png"
+    ]
+  }
+]
